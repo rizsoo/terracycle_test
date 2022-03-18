@@ -1,0 +1,52 @@
+.vendor {
+  width: 500px;
+  height: 700px;
+
+  background-image: url("./assets/vendor-machine.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 0 auto;
+}
+.product-display {
+  width: 300px;
+  height: 450px;
+  padding: 60px 35px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+
+  margin: 0;
+}
+
+.product {
+  height: 87px;
+  width: 61px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  color: white;
+
+  position: relative;
+}
+.product img {
+  height: 60%;
+  width: 90%;
+  object-fit: contain;
+
+  position: absolute;
+  top: 8px;
+}
+.product p {
+  background-color: black;
+  border-radius: 50%;
+  padding: 3px 5px 4px 5px;
+  border: white solid 1px;
+  z-index: 1;
+}
